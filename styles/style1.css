@@ -1,4 +1,9 @@
+body{
+  background-color: #D5E5DA;
+}
+
 .header {
+  background-color: #EFF0F0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
