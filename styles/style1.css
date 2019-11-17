@@ -4,6 +4,7 @@ body{
 
 .header {
   background-color: #EFF0F0;
+  position: fixed;
   font-family: "Arial", sans-serif;
   font-size: 24px;
 }
