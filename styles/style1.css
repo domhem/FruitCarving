@@ -4,6 +4,14 @@ body{
 
 .header {
   background-color: #EFF0F0;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+}
+
+.header li {
+  display: inline-block;
+}
+
+.header a {
+  display: block;
 }
