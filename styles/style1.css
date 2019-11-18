@@ -13,6 +13,7 @@ body{
 .header li {
   display: inline-block;
   text-transform: uppercase;
+  justify-items: end;
 }
 
 .header a {
