@@ -5,7 +5,7 @@ body{
 .header {
   background-color: #EFF0F0;
   position: fixed;
-  font-family: "Arial", sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: 24px;
   width:100%;
 }
@@ -13,9 +13,9 @@ body{
 .header li {
   display: inline-block;
   text-transform: uppercase;
-  justify-items: end;
 }
 
 .header a {
   display: block;
+  text-decoration: none;
 }
