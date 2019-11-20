@@ -4,32 +4,58 @@ body{
   margin: 0;
 }
 
-.header {
+.navbar{
   background-color: #FFFFFF;
   position: fixed;
   font-family: "Raleway";
   font-size: 24px;
   width:100%;
+  margin: 0 auto;
+}
+
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
-  vertical-align: middle;
+  display:flex;
 }
 
-.header li {
-  display: inline-block;
-  text-transform: uppercase;
-  padding-left: 5%;
-  padding-right: 5%;
+.navbar li{
+  float:none;
+  flex-grow: 1;
+}
+/*logo gets more space*/
+.navbar li:nth-child(3){
+  flex-grow: 2;
 }
 
-//logo image
-.header img{
-  height: 50%;
-}
-
-.header a {
-  display: block;
-  text-decoration: none;
+.navbar li a{
+  display:block;
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: black;
+  text-decoration: none;
+}
+.navbar li a:hover{
+  color: purple;
+}
+
+#topnav{
+  width:100%;
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  left:50%;
+  top: 20px;
+  z-index: 1;
+  margin-left: -150px;
+}
+.logo img{
+  width: 300px;
+  height: auto;
 }
 
 .main{
