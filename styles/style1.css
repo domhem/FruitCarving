@@ -12,7 +12,6 @@ body{
   width:100%;
   text-align: center;
   vertical-align: middle;
-  color: black;
 }
 
 .header li {
@@ -24,12 +23,13 @@ body{
 
 //logo image
 .header img{
-  height: 70%;
+  height: 50%;
 }
 
 .header a {
   display: block;
   text-decoration: none;
+  color: black;
 }
 
 .main{
