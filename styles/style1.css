@@ -21,6 +21,11 @@ body{
   padding-right: 5%;
 }
 
+//logo image
+.header img{
+  height: 70%;
+}
+
 .header a {
   display: block;
   text-decoration: none;
