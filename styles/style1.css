@@ -10,10 +10,7 @@ body{
   font-family: "Raleway";
   font-size: 24px;
   width:100%;
-}
-
-.header ul{
-  justify-content:center;
+  text-align: center;
 }
 
 .header li {
