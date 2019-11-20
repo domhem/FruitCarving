@@ -3,11 +3,12 @@ body{
 }
 
 .header {
-  background-color: #EFF0F0;
+  background-color: #FFFFFF;
   position: fixed;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Raleway";
   font-size: 24px;
   width:100%;
+  justify-items:center;
 }
 
 .header li {
@@ -18,4 +19,8 @@ body{
 .header a {
   display: block;
   text-decoration: none;
+}
+
+.main{
+  display: grid;
 }
