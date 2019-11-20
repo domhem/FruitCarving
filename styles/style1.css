@@ -1,14 +1,18 @@
 body{
   background-color: #D5E5DA;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
-  margin:0px;
   background-color: #FFFFFF;
   position: fixed;
   font-family: "Raleway";
   font-size: 24px;
   width:100%;
+}
+
+.header ul{
   justify-content:center;
 }
 
