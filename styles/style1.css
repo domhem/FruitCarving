@@ -3,6 +3,7 @@ body{
 }
 
 .header {
+  margin:0px;
   background-color: #FFFFFF;
   position: fixed;
   font-family: "Raleway";
