@@ -1,16 +1,44 @@
+html{
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(../images/backgroundimage.png);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat:no-repeat;
+}
+
 body{
-  background-color: #D5E5DA;
+  height: 100vh;
   padding: 0;
   margin: 0;
+  font-family: "Raleway";
+}
+
+h1{
+  font-size: 54px;
+  color: #424242;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2, h3{
+  font-size:20px;
+  color: #424242;
+  font-weight: 200;
+  text-transform:uppercase;
 }
 
 .navbar{
   background-color: #FFFFFF;
+  opacity: 0.7;
+  box-shadow: 0 8px 4px -2px gray;
   position: fixed;
-  font-family: "Raleway";
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 600;
   width:100%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .navbar ul{
@@ -22,42 +50,75 @@ body{
 }
 
 .navbar li{
-  float:none;
   flex-grow: 1;
 }
+
 /*logo gets more space*/
-.navbar li:nth-child(3){
-  flex-grow: 2;
+.navbar li:nth-child(1){
+  flex-grow: 5;
 }
 
 .navbar li a{
   display:block;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: black;
   text-decoration: none;
 }
 .navbar li a:hover{
-  color: purple;
-}
-
-#topnav{
-  width:100%;
-  position: relative;
+  color: #E7717D;
 }
 
 .logo{
-  position: absolute;
-  left:50%;
-  top: 20px;
-  z-index: 1;
-  margin-left: -150px;
+  position: fixed;
+  left: 3%;
+  top: 10px;
+  z-index: 2;
+  /*margin-left: -150px;*/
 }
 .logo img{
-  width: 300px;
+  width: 225px;
   height: auto;
 }
 
-.main{
-  display: grid;
+.main-container{
+  position: relative;
+  top: 50px;
+  display:grid;
+  grid-template-rows: 450px 600px;
+}
+
+.top-container{
+  background-color: rgba(194, 185, 176, 0.5);
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.top-container p{
+  line-height: 1.5;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.top-container h3{
+  color: #FFFFFF;
+  border-style: solid;
+  display: inline; /*makes border wrap around text*/
+  padding: 8px;
+}
+
+.middle-container{
+  text-align: center;
+}
+
+.middle-container h3{
+  border-style: solid;
+  display: inline; /*makes border wrap around text*/
+  padding: 8px;
 }
