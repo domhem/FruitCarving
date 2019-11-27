@@ -2,8 +2,6 @@ html{
 }
 
 body{
-  width: 100%;
-  height: 100vh;
   background-image: url(../images/backgroundimage.png);
   background-size: cover;
   background-attachment: local;
@@ -15,7 +13,7 @@ body{
 }
 
 h1{
-  font-size: 54px;
+  font-size: 6vw;
   color: #424242;
   font-weight: 200;
   text-transform: uppercase;
@@ -24,7 +22,7 @@ h1{
 }
 
 h2, h3, h4{
-  font-size:20px;
+  font-size:2.2vw;
   color: #424242;
   font-weight: 200;
   text-transform:uppercase;
@@ -37,6 +35,7 @@ h3{
 }
 
 p{
+  font-size: 1.7vw;
   line-height: 1.5;
   color: #FFFFFF;
   padding-bottom: 20px;
@@ -47,9 +46,10 @@ p{
   opacity: 0.7;
   box-shadow: 0 8px 4px -2px gray;
   position: fixed;
-  font-size: 26px;
+  font-size: 2.5vmin;
   font-weight: 600;
-  width:100%;
+  width:100vw;
+  height: 11vh;
   margin: 0 auto;
   z-index: 1;
 }
@@ -90,16 +90,15 @@ p{
   /*margin-left: -150px;*/
 }
 .logo img{
-  width: 225px;
+  width: 25vmin;
   height: auto;
 }
 
 .main-container{
   position: relative;
-  top: 50px;
   display:grid;
   /*grid-template-rows: 450px 600px 500px; */
-  grid-template-rows: 50vh 65vh 40vh;
+  grid-template-rows: 51vmax 61vmax 40vmax;
 }
 
 .top-container{
@@ -109,9 +108,10 @@ p{
   padding-right: 40px;
   padding-bottom: 40px;
   text-align: center;
-  width: 80%;
-  height: auto;
-  margin: auto;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: auto;
+  margin-top: 12vmax;
 }
 
 .top-container h3{
@@ -147,19 +147,24 @@ p{
 
 .preview-gallery-options{
   background-color: #E7717D;
-  padding: 20px 80px 20px 80px;
+  padding: 2vh 6vw 2vh 6vw;
 }
 
 .gallery-images{
   position:absolute;
-  top: -20px;
-  left: 25vw;
+  top: -3vh;
+  left: 10vmax;
 }
 
 .gallery-images img{
   margin: 5px;
-  max-width: 20vw;
+  width: 20vmax;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.preview-gallery-row{
+  overflow:hidden;
+  width: 100vw;
 }
 
 .bottom-container{
@@ -174,11 +179,12 @@ p{
   position: absolute;
   background-color: #AFD275;
   padding: 40px;
+  padding-bottom: 60px;
 }
 
 .bottom-container img{
   position: absolute;
-  max-width: 40vw;
+  width: 40vmax;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   left: 36vw;
   top: 5vh;
