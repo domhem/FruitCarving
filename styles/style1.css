@@ -47,7 +47,7 @@ p{
 
 .navbar{
   background-color: #FFFFFF;
-  opacity: 0.7;
+  opacity: 0.8;
   box-shadow: 0 8px 4px -2px gray;
   position: fixed;
   font-size: 3vmin;
@@ -184,13 +184,13 @@ p{
 
 .gallery-images img{
   margin: 5px;
-  width: 20vmax;
+  width: 20vmin;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .preview-gallery-row{
-  overflow:hidden;
-  width: 100vw;
+  /*overflow:hidden;*/
+  /*width: 100vw;*/
 }
 
 .bottom-container{
@@ -210,7 +210,7 @@ p{
 
 .bottom-container img{
   position: absolute;
-  width: 40vmax;
+  width: 40vmin;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   left: 36vw;
   top: 5vh;
