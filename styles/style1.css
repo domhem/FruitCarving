@@ -38,6 +38,10 @@ h3{
   display: inline; /*makes border wrap around text*/
   padding: 3vmin;
 }
+h3:hover{
+  color: #FFFFFF;
+  background-color: rgba(231,113,125,0.5);
+}
 
 p{
   font-size: 2.5vmin;
@@ -79,9 +83,7 @@ p{
 
 .navbar li a{
   display: block;
-  padding-top: 4vmin;
-  padding-bottom: 4vmin;
-  padding-right: 8vmin;
+  padding: 4vmin;
   color: black;
   text-decoration: none;
 }
@@ -104,15 +106,15 @@ p{
   position: relative;
   display:grid;
   /*grid-template-rows: 450px 600px 500px; */
-  grid-template-rows: 50vmax 61vmax 40vmax;
+  grid-template-rows: 45vmax;
 }
 
 .top-container{
   background-image:
     linear-gradient(
-      /*top brown, bottom pink*/
-      rgba(126, 104, 90, 0.5),
-      rgba(238, 173, 180, 0.7)
+      /*top pink, bottom black*/
+      0deg, rgba(231,150,158,1) 0%,
+      rgba(0,0,0,0.6) 100%
     ),
     url(../images/top-background.jpg);
   background-size: cover;
@@ -129,7 +131,6 @@ p{
   justify-content: center; /* align vertical */
   align-items: center; /* align horizontal */
   padding-top: 10vh;
-  margin-bottom: 5vmin;
 }
 
 .top-container p{
@@ -145,26 +146,35 @@ p{
 }
 
 .middle-container{
+  padding-top: 5vmin;
+  padding-bottom: 10vmin;
+  background: rgb(245,245,245);
+  background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(238,173,180,1) 100%);
   text-align: center;
-  position: relative;
+  /*position: relative;*/
 }
 .middle-container h2{
-  padding-bottom: 20px;
+
 }
 
 .middle-container h3{
-  position: absolute;
+  /*position: absolute;
   bottom: 0;
-  left: 41%;
+  left: 41%;*/
 }
 
 .preview-gallery{
-  position:relative;
+  /*position:relative;*/
 }
 
 .preview-gallery h4{
-  font-weight: bold;
-  text-align: left;
+  font-weight: bolder;
+  display: inline-block;
+  text-align: center;
+  padding-left: 4vmin;
+  padding-right: 4vmin;
+  font-size: 2.5vmin;
+  font-weight: 600;
 }
 
 .preview-gallery h4:hover{
@@ -172,46 +182,86 @@ p{
 }
 
 .preview-gallery-options{
-  background-color: #E7717D;
-  padding: 2vh 6vw 2vh 6vw;
+  /*background-color: #E7717D;*/
+  /*padding: 2vh 6vw 2vh 6vw;*/
 }
 
 .gallery-images{
-  position:absolute;
+  /*position:absolute;
   top: -3vh;
-  left: 10vmax;
+  left: 10vmax;*/
+  background-image:
+    linear-gradient(
+      /*top pink, bottom black*/
+      0deg, rgba(0,0,0,0.5) 0%,
+      rgba(231,113,125,1) 100%
+    ),
+    url(../images/middle-background.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center center;
+    margin-right: 8vmax;
+    margin-bottom: 5vmax;
 }
 
 .gallery-images img{
-  margin: 5px;
-  width: 20vmin;
+  margin: 0.2vw;
+  width: 20vmax;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .preview-gallery-row{
   /*overflow:hidden;*/
   /*width: 100vw;*/
+  margin-left: 2vw;
 }
 
 .bottom-container{
-  position: relative;
-  margin-top: 8vh;
+  background: rgb(175,210,117);
+  background: linear-gradient(0deg, rgba(175,210,117,1) 0%, rgba(245,245,245,1) 100%);
+  /*position: relative;
+  /*margin-top: 8vh;
   text-align: left;
   width: 40vw;
-  margin-left: 10vw;
+  margin-left: 10vw;*/
+  text-align: center;
 }
 
 .bottom-left-container{
-  position: absolute;
+  /*position: absolute;*/
+  display: inline-block;
   background-color: #AFD275;
-  padding: 40px;
-  padding-bottom: 60px;
+  padding: 3vmax 3vmax 6vmax 3vmax;
+  width: 50vmin;
+  vertical-align: middle;
+
+}
+.bottom-left-container p{
+  margin-bottom: 5vmax;
 }
 
 .bottom-container img{
-  position: absolute;
-  width: 40vmin;
+  /*position: absolute;*/
+  display: inline-block;
+  width: 30vmax;
+  vertical-align:middle;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  left: 36vw;
-  top: 5vh;
+}
+
+.bottom-wrapper{
+  background-image:
+    linear-gradient(
+      /*top pink, bottom black*/
+      0deg, rgba(0,0,0,0.5) 0%,
+      rgba(175,210,117,1) 100%
+    ),
+    url(../images/bottom-background.jpg);
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center center;
+  margin-left: 8vmax;
+  margin-bottom: 5vmax;
+  padding: 4vmax;
 }
