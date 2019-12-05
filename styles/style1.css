@@ -49,15 +49,24 @@ p{
   color: #FFFFFF;
 }
 
-.navbar{
+#topnav{
+  /*top: 0;
+  width: 100%;
+  position: fixed;
   background-color: #FFFFFF;
   opacity: 0.8;
-  box-shadow: 0 8px 4px -2px gray;
-  position: fixed;
+  box-shadow: 0 8px 4px -2px gray;*/
+}
+
+.navbar{
+  /*background-color: #FFFFFF;
+  opacity: 0.8;
+  box-shadow: 0 8px 4px -2px gray;*/
+  /*position: fixed;*/
   font-size: 3vmin;
   font-weight: 600;
   width:100%;
-  /*margin: 0 auto;*/
+  padding-bottom: 3vmax;
   z-index: 1;
 }
 
@@ -84,7 +93,7 @@ p{
 .navbar li a{
   display: block;
   padding: 4vmin;
-  color: black;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .navbar li a:hover{
@@ -92,21 +101,36 @@ p{
 }
 
 .logo{
-  position: fixed;
-  top: 10px;
+  /*position: fixed;*/
   z-index: 2;
   /*margin-left: -150px;*/
 }
 .logo img{
-  width: 25vmin;
+  width: 50vmin;
+  display:block;
+  margin: 0 auto;
   height: auto;
+}
+
+.navbar-scroll li a{
+  color: rgba(0,0,0,0);
+}
+
+.sticky{
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .main-container{
   position: relative;
   display:grid;
   /*grid-template-rows: 450px 600px 500px; */
-  grid-template-rows: 45vmax;
+  /*grid-template-rows: 50vmax;*/
 }
 
 .top-container{
@@ -117,9 +141,6 @@ p{
       rgba(0,0,0,0.6) 100%
     ),
     url(../images/top-background.jpg);
-  -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
   background-size: cover;
   background-position:center center;
   background-attachment: fixed;
@@ -133,7 +154,8 @@ p{
   flex-direction: column;
   justify-content: center; /* align vertical */
   align-items: center; /* align horizontal */
-  padding-top: 10vh;
+  padding-top: 3vmax;
+  padding-bottom: 3vmax;
 }
 
 .top-container p{
@@ -196,7 +218,7 @@ p{
   background-image:
     linear-gradient(
       /*top pink, bottom black*/
-      0deg, rgba(0,0,0,0.5) 0%,
+      0deg, rgba(0,0,0,0.6) 0%,
       rgba(231,113,125,1) 100%
     ),
     url(../images/middle-background.jpg);
@@ -207,8 +229,9 @@ p{
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center center;
+    box-shadow: 4vmax 2vmax #e7717d;
     margin-right: 8vmax;
-    margin-bottom: 5vmax;
+    margin-bottom: 8vmax;
 }
 
 .gallery-images img{
@@ -241,6 +264,8 @@ p{
   padding: 3vmax 3vmax 6vmax 3vmax;
   width: 50vmin;
   vertical-align: middle;
+  margin-bottom: 2vmax;
+  margin-right: 2vmax;
 
 }
 .bottom-left-container p{
@@ -259,8 +284,8 @@ p{
   background-image:
     linear-gradient(
       /*top pink, bottom black*/
-      0deg, rgba(0,0,0,0.5) 0%,
-      rgba(175,210,117,1) 100%
+      0deg, rgba(160,197,100,1) 0%,
+      rgba(0,0,0,0.6) 100%
     ),
     url(../images/bottom-background.jpg);
   -webkit-background-size: cover;
@@ -270,6 +295,7 @@ p{
   background-repeat:no-repeat;
   background-size: cover;
   background-position:center center;
+  box-shadow: -4vmax 2vmax #a0c564;
   margin-left: 8vmax;
   margin-bottom: 5vmax;
   padding: 4vmax;
