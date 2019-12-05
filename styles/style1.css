@@ -117,6 +117,9 @@ p{
       rgba(0,0,0,0.6) 100%
     ),
     url(../images/top-background.jpg);
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
   background-size: cover;
   background-position:center center;
   background-attachment: fixed;
@@ -197,6 +200,9 @@ p{
       rgba(231,113,125,1) 100%
     ),
     url(../images/middle-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-size: cover;
@@ -257,6 +263,9 @@ p{
       rgba(175,210,117,1) 100%
     ),
     url(../images/bottom-background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
   background-repeat:no-repeat;
   background-size: cover;
