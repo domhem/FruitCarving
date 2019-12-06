@@ -22,7 +22,7 @@ h1{
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
 }
 
 mark{
@@ -168,8 +168,8 @@ a{
   display: flex;
   flex-direction: column;
   /*justify-content: center; /* align vertical */
-  justify-content: flex-end;
-  /*align-items:; /* align horizontal */
+  /*justify-content: center;*/
+  align-items: center; /* align horizontal */
   padding-top: 3vmax;
 }
 
