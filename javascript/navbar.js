@@ -1,9 +1,11 @@
 (function ($) {
   $(document).ready(function(){
 
-    // hide .navbar-scroll first
+    // hide .navbar-scroll and arrow first
     $(".navbar-scroll").hide();
-    // make navbar fixed
+    $(".navarrow").hide();
+
+    // make navbar fixed and show arrow when scrolling past the logo
     $(function () {
         $(window).scroll(function () {
 
@@ -18,12 +20,14 @@
                  // set distance user needs to scroll before we start fadeIn
             if ($(this).scrollTop() > elementHeight) {
               $(".navbar-scroll").show();
+              $(".navarrow").fadeIn();
               element.classList.add("sticky");
 
             }
             if ($(this).scrollTop() < elementScroll){
               element.classList.remove("sticky");
               $(".navbar-scroll").hide();
+              $(".navarrow").fadeOut();
             }
         });
     });
