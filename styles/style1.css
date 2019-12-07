@@ -164,7 +164,7 @@ a{
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -2;
 }
 
 .top-container{
@@ -179,6 +179,7 @@ a{
   align-items: center; /* align horizontal */
   padding-top: 3vmax;
   padding-bottom: 3vmax;
+  z-index: -1;
 }
 
 .top-container p{
@@ -199,7 +200,8 @@ a{
   background: rgb(245,245,245);
   background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(238,173,180,1) 100%);
   text-align: center;
-  /*position: relative;*/
+  position: relative;
+  z-index: -1;
 }
 .middle-container h2{
 
@@ -245,16 +247,17 @@ a{
       rgba(231,113,125,1) 100%
     ),
     url(../images/middle-background.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center center;
     box-shadow: 4vmax 2vmax #e7717d;
-    margin-right: 8vmax;
+    /*margin-right: 8vmax;*/
+    width: 100%;
+    height: 100%;
     margin-bottom: 8vmax;
+    position: relative;
+    z-index:0;
 }
 
 .gallery-images img{
