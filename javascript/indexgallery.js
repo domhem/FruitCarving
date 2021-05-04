@@ -47,7 +47,7 @@ weddingb.onclick = function(){
   naughtyb.style.color="#424242";
   for(let i = 1; i <= 4; i++) {
   var newImage = document.createElement('img');
-  newImage.setAttribute('src', 'images/gallery/wedding/w' + i + '.jpg');
+  newImage.setAttribute('src', 'images/gallery/wedding/wd' + i + '.jpg');
   previewGal.appendChild(newImage);
   }
 }
