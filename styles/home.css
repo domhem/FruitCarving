@@ -170,8 +170,7 @@ a{
   flex-direction: column;
   justify-content: center; /* align vertical */
   align-items: center; /* align horizontal */
-  padding-top: 3vmax;
-  padding-bottom: 3vmax;
+  min-height: 100vh;
 }
 
 .top-container p{
